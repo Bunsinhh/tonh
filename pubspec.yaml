@@ -1,5 +1,5 @@
 name: tonh
-description: "A new Flutter project."
+description: "I had trouble managing my daily tasks and team project tasks efficiently, so I decided to build an app that helps not just me, but a general audience, to manage tasks effectively. This app will include a to-do list for personal and team tasks, along with a built-in chat feature to improve collaboration with teammates."
 
 publish_to: "none"
 
@@ -9,16 +9,37 @@ environment:
   sdk: ^3.7.0
 
 dependencies:
+  get: ^4.6.5
   flutter:
     sdk: flutter
-
   cupertino_icons: ^1.0.8
+  percent_indicator: ^4.2.2
+  google_fonts: ^6.2.1
+  easy_date_timeline: ^2.0.9
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  flutter_launcher_icons: ^0.13.1
   flutter_lints: ^5.0.0
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/tonh.png"
+
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/image/
+    - assets/icons/
+
+fonts:
+  - family: SourceSansPro-Regular
+    fonts:
+      - asset: assets/fonts/SourceSansPro-Regular.ttf
+  - family: Battambang
+    fonts:
+      - asset: assets/fonts/Battambang-Regular.ttf
+
